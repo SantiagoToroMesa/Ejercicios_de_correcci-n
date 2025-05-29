@@ -7,38 +7,38 @@
         p {
             color: blue;
         }
-        
+
         .text {
             color: green;
         }
-        
+
         #unique {
             color: red !important;
         }
-        
-        div p .text {
+
+        div p.text {
             color: purple;
         }
-        
+
         div > p {
             font-weight: bold;
         }
-        
+
         p:first-child {
             text-decoration: underline;
         }
-        
+
         p::first-letter {
             font-size: 200%;
         }
     </style>
 </head>
 <body>
-    <div>
-        <p class="text" id="unique">Este es un párrafo único</p>
-        <p>Este es otro párrafo</p>
-        <span><p>Párrafo dentro de span</p></span>
-    </div>
-    <p class="text">Párrafo fuera del div</p>
+<div>
+    <p class="text" id="unique">Este es un párrafo único</p>
+    <p>Este es otro párrafo</p>
+    <span><p>Párrafo dentro de span</p></span>
+</div>
+<p class="text">Párrafo fuera del div</p>
 </body>
 </html>

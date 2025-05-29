@@ -1,43 +1,66 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Texto y Fuentes</title>
     <style>
+        * {
+            box-sizing: border-box; /* Include padding and border in element's size */
+        }
+
         body {
-            font: Arial, sans-serif;
-            line-height: 1.5em;
+            font-family: Arial, sans-serif; /* Base font */
+            line-height: 1.6; /* Line height for readability */
+            margin: 20px;
+            background-color: #f4f4f4; /* Light background */
+            color: #333; /* Text color */
         }
-        
+
         h1 {
-            font-family: "Times New Roman", Times, serif;
-            text-align: center;
-            text-decoration: underline;
-            color: #333333;
+            font-family: "Times New Roman", Times, serif; /* Serif font for heading */
+            text-align: center; /* Centered text */
+            text-decoration: underline; /* Underlined */
+            color: #222; /* Darker heading color */
+            margin-bottom: 30px; /* Space below heading */
         }
-        
+
         .paragraph {
-            font-size: 16px;
-            text-align: justify;
-            letter-spacing: 1px;
-            word-spacing 2px;
+            font-size: 16px; /* Paragraph font size */
+            text-align: justify; /* Justify alignment */
+            letter-spacing: 0.5px; /* Slight spacing between letters */
+            word-spacing: 2px; /* Space between words */
+            margin-bottom: 20px; /* Space below paragraph */
+            background-color: #ffffff; /* White background */
+            padding: 15px; /* Padding inside paragraph */
+            border-left: 4px solid #007BFF; /* Decorative left border */
         }
-        
+
         .special {
-            font-variant: small-caps;
-            text-transform: uppercase;
-            font-weight: bold;
+            font-variant: small-caps; /* Small caps */
+            text-transform: uppercase; /* Uppercase text */
+            font-weight: bold; /* Bold text */
+            color: #0056b3; /* Highlight color */
         }
-        
+
         #quote {
-            font-style: italic;
-            quotes: "«" "»";
+            font-style: italic; /* Italic text */
+            quotes: "«" "»"; /* Spanish style quotes */
+            background-color: #eee; /* Light gray background */
+            padding: 10px 15px; /* Padding */
+            border-left: 4px solid #999; /* Left quote border */
+            margin: 0 auto;
+            width: fit-content; /* Adjust width to content */
         }
     </style>
 </head>
 <body>
-    <h1>Práctica de Texto y Fuentes</h1>
-    <p class="paragraph">Este es un párrafo de ejemplo que muestra cómo aplicar diferentes estilos de texto en CSS. <span class="special">Esta parte del texto tiene un estilo especial.</span></p>
-    <p id="quote">Esta es una cita importante que debería estar entre comillas especiales.</p>
+<h1>Práctica de Texto y Fuentes</h1> <!-- Page heading -->
+
+<p class="paragraph">
+    Este es un párrafo de ejemplo que muestra cómo aplicar diferentes estilos de texto en CSS.
+    <span class="special">Esta parte del texto tiene un estilo especial.</span>
+</p>
+
+<p id="quote">Esta es una cita importante que debería estar entre comillas especiales.</p> <!-- Quote text -->
 </body>
 </html>
